@@ -1,0 +1,142 @@
+@media (max-width:900px)
+{
+    .menu{
+        *position: relative;
+        
+    }
+.menu h2{
+    display: none;
+}
+
+    .menu-hamburguesa{
+        width: 50px;
+        display: block;
+        position: absolute;
+        left: 15px;
+        z-index: 100;
+       
+        
+    }
+
+
+
+    .carrito-compras{
+        position: absolute;
+        top: 30px;
+        width: 70px;
+        right: 25px;
+      
+
+    }
+    
+
+    .nav ul{
+        position: absolute;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 50;
+        padding-top: 100px;
+        align-items: center;
+        transform: translate(-100%);
+        transition: transform .3s ;
+        
+
+    }
+
+
+    .nav ul li{
+     padding: 2rem;
+        
+    }
+
+    .nav ul.aparecer-menu{
+  
+        transform: translateX(0);
+
+    }
+
+
+
+
+    .header-txt{
+        flex-basis: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .botones-header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .images-content{
+        
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+     
+    
+
+    }
+
+    .juegos-content{
+        
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 30px;
+        padding: 30px;
+        
+     }
+
+     .main h2{
+       text-align: center;
+           
+        }
+
+     .tarjeta{
+       flex-grow: 1;
+        
+    
+     }
+
+     .contactos-content{
+      
+     max-width: 400px;
+  
+    }
+.contactos-content h3{
+    text-align: center;
+}
+
+    .correo-enviar {
+        flex-direction: column;
+        gap: 10px;
+        
+        
+    
+     }
+
+
+
+}
+
+@media (max-width:425px){
+
+    .contactos-content{
+            max-width: 375px;
+    }
+
+}
+
+
+@media (max-width:375px){
+
+    .contactos-content{
+            max-width: 330px;
+    }
+
+}

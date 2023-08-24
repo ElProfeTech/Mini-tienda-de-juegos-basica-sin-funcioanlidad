@@ -1,0 +1,366 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --naranjita:rgba(228, 89, 9, 0.979);
+    --moraditoclaro:rgb(110, 10, 150);
+}
+
+body{
+    background-color: rgb(54, 5, 73);
+   
+font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.menu{
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.menu h2{
+    text-transform: uppercase;
+    position: absolute;
+    left: 10px;
+    font-size:2em;
+    
+    color: var(--naranjita);
+
+    
+    
+}
+
+.nav{
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+   
+    display: block;
+    cursor: pointer;
+}
+
+.nav ul li a{
+    padding: 10px 20px;
+    color: white;
+    display: block;
+    font-size: 1.1em;
+    
+}
+
+.nav ul li a:hover{
+    color:var(--naranjita);
+    
+}
+
+.menucito{
+width: 60px;
+height: 60px;
+padding: 10px;
+cursor: pointer;
+display: none;
+
+}
+
+.carrito-compras{
+    position: absolute;
+    top: 30px;
+    width: 70px;
+    right: 25px;
+    display: block;
+
+}
+
+.conteo-carrito{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    display: block;
+    padding: 0.5px 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+.menucito img{
+    width: 100%;
+  
+    
+    }
+
+.header-content{
+    padding-left: 10px;
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt h1{
+    
+    color: white;
+    font-weight: 800;
+    
+    font-size: 3em;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.header-txt h1 span{
+  color: var(--naranjita);
+}
+
+.header-txt p{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.botones-header{
+    display: flex;
+}
+
+.botones-header a{
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid var(--naranjita);
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.botones-header a:hover{
+    background-color: var(--naranjita);
+  
+}
+
+
+.populares{
+padding-top: 3rem;
+padding-bottom: 3.5rem;
+margin-bottom: 30px;
+
+}
+
+.populares h2{
+    text-transform: capitalize;
+    color: white;
+    font-size: 2em;
+    padding-bottom: 3rem;
+    text-align: center;
+    
+    }
+
+    .populares  .images-content{
+    width: 100%;
+
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   
+
+   
+}
+
+.images-content img{
+   width: 150px;
+   object-fit: cover;
+   cursor: pointer;
+}
+
+
+
+ .main{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+ }
+
+ .main h2{
+ text-transform: capitalize;
+ font-size: 2em;
+ margin-bottom: 3rem;
+    
+ }
+
+ .juegos-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+    
+ }
+
+ .juegos-content img{
+  width: 100%;
+  border-radius: 20px 20px 0  0 ;
+ }
+
+ .tarjeta{
+    background-color: var(--moraditoclaro);
+    box-shadow:  0 0 10px 5px black;
+    border-radius: 20px;
+    
+
+ }
+
+ .tarjeta:hover{
+    transform: translateY(-15px);
+    transition: all .3s ease-in-out;
+    box-shadow:  -15px 20px 20px black;
+    
+
+ }
+
+ .tarjeta h3{
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+ }
+
+ .precio-comprar{
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .precio-comprar p{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: var(--naranjita);
+    
+ }
+
+ .precio-comprar .btn-comprar{
+    border: none;
+    padding: 15px 30px;
+    background-color: var(--naranjita);
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+   
+    
+ }
+
+ .precio-comprar .btn-comprar:hover{
+   background-color:transparent;
+   outline: 2px solid var(--naranjita);
+   
+    
+ }
+
+ .contactos{
+    padding: 5rem 0 5rem 0;
+
+ }
+
+ .contactos-content{
+    background-color: var(--moraditoclaro);
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding-top: 5rem;
+ }
+
+ .contactos-content h3{
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    font-size: 1.4em;
+
+    
+ }
+
+ .correo-enviar {
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+ }
+
+ .input-correo{
+    border-radius: 50px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border: none;
+ }
+
+ .btn-enviar{
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--naranjita);
+    border-radius: 50px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 5px;
+ }
+
+
+ .footer{
+    margin-top: 8rem;
+
+ }
+
+ .footer h2{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 80px;
+    
+ }
+
+
